@@ -72,6 +72,7 @@ function getFilteredJobs() {
             //Handle this in the mongoose query itself
             res.status(200).json({
                 message: 'Job route is working fine',
+                size:jobs.length,
                 status: 'Working',
                 jobs: skills ? filteredJobs : jobs
             });
